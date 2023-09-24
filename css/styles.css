@@ -32,7 +32,7 @@ body h2 {
 /* header styles */
 .generic-header {
     background-color: #fff;
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #ececec;
     width: 1600px;
     margin: 0 auto;
 }
@@ -359,7 +359,7 @@ margin: 0 auto;
 .filter-button {
     background-color: var(--buttons-color);
     padding: 6px 22px;
-    border:var(--buttons-color)
+    border:var(--buttons-color);
     border-radius: 4px;
     box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -388,27 +388,34 @@ margin: 0 auto;
     background-color: var(--visited-link-color);
 }
 
+.portofolio-content {
+    background-color: #fff;
+    width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .portofolio-list ul {
     width: 1200px;
-    padding: 0;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;  
     justify-content: space-between;
-    align-items: center;
-    padding-bottom: 94px;
-    gap: 30px; 
+    gap: 30px;
+    padding: 0 0 94px 0;
 }
 
 .portofolio-cards {
-max-width: 100%;
-border-radius: 4px;
-background-color: #fff;
+    max-width: 100%;
+    border-radius: 4px;
+    background-color: #fff;
+    flex-basis: calc((100% - 90px) / 3)
 }
 
 .portofolio-images {
     display: block;
+    max-width: 100%; 
+    height: auto;
 }
 
 .portofolio-item {
